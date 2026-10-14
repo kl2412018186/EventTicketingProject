@@ -1,0 +1,1369 @@
+{
+  "info": {
+    "_postman_id": "72b4dc77-ff0c-4dbc-a585-2ccdf7e95349",
+    "name": "Event Ticketing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58401320",
+    "_collection_link": "https://go.postman.co/collection/58401320-72b4dc77-ff0c-4dbc-a585-2ccdf7e95349?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"siti@eventticketing.com\",\r\n  \"password\": \"Organiser@123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@eventticketing.com\",\r\n  \"password\": \"Admin@123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"fatimah@gmail.com\",\r\n  \"password\": \"Customer@123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/venues",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "venues"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"DELETE TEST EVENT\",\r\n  \"description\": \"Temporary event for API testing\",\r\n  \"event_date\": \"2026-12-20 20:00:00\",\r\n  \"ticket_price\": 10.00,\r\n  \"available_tickets\": 10\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/bookings",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/bookings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "bookings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events/ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_name\": \"Test Event Updated\",\r\n  \"ticket_price\": 35.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events/ID",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events",
+            "ID"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events/16",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events/16",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events",
+            "16"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@eventticketing.com\",\r\n  \"password\": \"Admin@123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"siti@eventticketing.com\",\r\n  \"password\": \"Organiser@123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"fatimah@gmail.com\",\r\n  \"password\": \"Customer@123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_id\": 1,\r\n    \"event_name\": \"Test Event API\",\r\n    \"description\": \"Testing event creation using Postman.\",\r\n    \"event_date\": \"2027-01-15 10:00:00\",\r\n    \"ticket_price\": 35.00,\r\n    \"available_tickets\": 100\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events/18",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_id\": 1,\r\n    \"event_name\": \"Test Event API Updated\",\r\n    \"description\": \"Testing event update using Postman.\",\r\n    \"event_date\": \"2027-01-15 10:00:00\",\r\n    \"ticket_price\": 40.00,\r\n    \"available_tickets\": 150\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events/18",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events",
+            "18"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events/18",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events/18",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events",
+            "18"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/venues",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "venues"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n    \"venue_name\": \"Test Venue API\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": 200,\r\n    \"description\": \"Testing venue creation using Postman.\"\r\n}\r\n  ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/venues",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "venues"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/bookings",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/bookings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "bookings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/users",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "f5ae27a9c0c90d6267c0480c6177331e33f21a0613dc6bd3070321b4021bf36e",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/users",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "29bd6c702ccb296dfd75fe87965c7ce85676c595f15f5762299e3ff8b906e5a5",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "a75d88d2dfc0662b0bdc6e95b51fefa726ddab83e8f64d605a70e9a9aa480804",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_name\": \"Test Venue\",\r\n  \"location\": \"Kuala Lumpur\",\r\n  \"capacity\": 100,\r\n  \"description\": \"Testing venue access\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/venues",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "venues"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "97b18a4607c01335fe210b8a536ca8764196017e2e89e0781af2cc15c5ed1645",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/venues",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "venues"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "e13b342da4f1262fbaa41a7fc75fd7a864085c97dfbdd7153d69d3f79e37f34c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_name\": \"Admin Test Venue\",\r\n  \"location\": \"Kuala Lumpur\",\r\n  \"capacity\": 150,\r\n  \"description\": \"Testing administrator permission.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/venues",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "venues"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "e13b342da4f1262fbaa41a7fc75fd7a864085c97dfbdd7153d69d3f79e37f34c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/venues/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "venues",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "166d79d69b95bd3334b6a42bb337480dd8181580a008519bceb2d92e9d3323fb",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "166d79d69b95bd3334b6a42bb337480dd8181580a008519bceb2d92e9d3323fb",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"Test Event API\",\r\n  \"description\": \"Event created for API testing\",\r\n  \"event_date\": \"2026-11-20 20:00:00\",\r\n  \"ticket_price\": 50,\r\n  \"available_tickets\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "9a577bc795a176c387fe0aa5b30e1079ce435a7f817d2b06628957a3dad53646",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"Test Event API\",\r\n  \"description\": \"Event created for API testing\",\r\n  \"event_date\": \"2026-11-20 20:00:00\",\r\n  \"ticket_price\": 50,\r\n  \"available_tickets\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "9a577bc795a176c387fe0aa5b30e1079ce435a7f817d2b06628957a3dad53646",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"Test Event API\",\r\n  \"description\": \"Event created for API testing\",\r\n  \"event_date\": \"2026-11-20 20:00:00\",\r\n  \"ticket_price\": 50,\r\n  \"available_tickets\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "d84bbfc996f370f6251995d5fcaf7b4355391c3e86ba9bfd0a627eb84a1793c5",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"Test Event API\",\r\n  \"description\": \"Event created for API testing\",\r\n  \"event_date\": \"2026-11-20 20:00:00\",\r\n  \"ticket_price\": 50,\r\n  \"available_tickets\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "9dc88baf8f03d31011603943f661e68b6e00d2ad3d13bf114dedd7442e78cbd9",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"Test Event Organiser\",\r\n  \"description\": \"Testing event creation\",\r\n  \"event_date\": \"2026-11-20 20:00:00\",\r\n  \"ticket_price\": 50,\r\n  \"available_tickets\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "9dc88baf8f03d31011603943f661e68b6e00d2ad3d13bf114dedd7442e78cbd9",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"Test Event Organiser Updated\",\r\n  \"description\": \"Testing event update\",\r\n  \"event_date\": \"2026-11-20 20:00:00\",\r\n  \"ticket_price\": 60,\r\n  \"available_tickets\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events/21",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events",
+            "21"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/venues/7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "0a78a01fcade6d673dedd3651eff02dc04a82a62a0b2dfe79e86519d7ca39279",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_id\": 1,\r\n  \"event_name\": \"Test Event Organiser Updated\",\r\n  \"description\": \"Testing event update\",\r\n  \"event_date\": \"2026-11-20 20:00:00\",\r\n  \"ticket_price\": 60,\r\n  \"available_tickets\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/bookings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "bookings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "API Calender",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "0a78a01fcade6d673dedd3651eff02dc04a82a62a0b2dfe79e86519d7ca39279",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_id\": 21,\r\n  \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/bookings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "bookings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "API Calender",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "47cd0fcefed893f924358e85414d9b74281b21bdc04d35be6de6006496737a6f",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_id\": 21,\r\n  \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/holidays?year=2026",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "holidays"
+          ],
+          "query": [
+            {
+              "key": "year",
+              "value": "2026"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events?search=concert",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "47cd0fcefed893f924358e85414d9b74281b21bdc04d35be6de6006496737a6f",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_id\": 21,\r\n  \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events?search=concert",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "concert"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events?page=1&limit=5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "47cd0fcefed893f924358e85414d9b74281b21bdc04d35be6de6006496737a6f",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_id\": 21,\r\n  \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events?page=1&limit=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost/EventTicketing/api/index.php/events?search=Gala",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "47cd0fcefed893f924358e85414d9b74281b21bdc04d35be6de6006496737a6f",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_id\": 21,\r\n  \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/EventTicketing/api/index.php/events?search=Gala",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "EventTicketing",
+            "api",
+            "index.php",
+            "events"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Gala"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
